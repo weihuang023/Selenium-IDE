@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://newtours.demoaut.com/" />
+<title>SeleniumDemo</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SeleniumDemo</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://newtours.demoaut.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=userName</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=tripType value=oneway</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=tripType value=roundtrip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.getElementsByName(&quot;servClass&quot;)[0]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.getElementsByName(&quot;servClass&quot;)[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>document.getElementsByName(&quot;servClass&quot;)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SIGN-OFF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Home</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>Atlanta to Las Vegas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>atlanta to Las Vegas</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>document.forms[&quot;home&quot;].elements[&quot;userName&quot;]</td>
+	<td>invalidUN</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>document.forms[&quot;home&quot;].elements[&quot;password&quot;]</td>
+	<td>invalidPW</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[name=login]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=SIGN-OFF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=REGISTER</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=firstName]</td>
+	<td>auto</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=lastName]</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=phone]</td>
+	<td>12345647890</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input#userName</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=address1]</td>
+	<td>1 main street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=city]</td>
+	<td>new york</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=state]</td>
+	<td>new york</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=postalCode]</td>
+	<td>11111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select[name=country]</td>
+	<td>index=22</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input#email</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=password]</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=confirmPassword]</td>
+	<td>autotest@123.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input[name=&quot;register&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//a/font/b</td>
+	<td>var1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTextPresent</td>
+	<td>autotest@123.com</td>
+	<td>var1</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var1}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextNotPresent</td>
+	<td>atuoestt@321.com</td>
+	<td>var2</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>autotest@123.com</td>
+	<td>var2</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${var2}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
